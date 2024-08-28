@@ -1,0 +1,77 @@
+.group-chat-button {
+  font-family: "DM Sans", sans-serif;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color:#FFD43B;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+}
+
+.group-chat-button:hover:hover {
+  background-color: #FFC107;
+}
+
+.image-group-chat-poster{
+  border-radius: 20px;
+  width: auto;
+  height: 500px;
+  margin-right: 20px;
+}
+
+.image-chat-group-tittle{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.image-chatGroup{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.group-message{
+  display: block;
+}
+.name-chat-group{
+  margin-left: 10px;
+  color: black;
+  font-size: 25px;
+}
+
+.chat-group-header{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  height: 10%;
+  align-items: center;
+  background-color: #FFC107;
+}
+
+@media (max-width: 768px) {
+
+.chat-group-header{
+  height: 6%;
+}
+.header-chat{
+  height: 0px;
+}
+
+.api-group{
+  margin-right: 30px;
+}
+
+li .name-chat-group{
+  margin-left: 10px;
+  color: black;
+  font-size: 16px;
+}
