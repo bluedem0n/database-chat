@@ -1,4 +1,4 @@
-import { getApiKey, setApiKey } from '../src/lib/apiKey.js';
+import { getApiKey, setApiKey } from '../src/lib/apikeyMarvel.js';
 
 describe('getApiKey', () => {
 

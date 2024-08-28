@@ -30,12 +30,12 @@ Para garantizar la seguridad y persistencia de la
 API KEY, se sugiere utilizar [Local Storage](https://developer.mozilla.org/es/docs/Web/API/Window/localStorage).
 Te recomendamos seguir estos pasos:
 
-1. En la carpeta `lib`, crea un nuevo archivo llamado `apiKey.js`.
+1. En la carpeta `lib`, crea un nuevo archivo llamado `apikeyMarvel.js`.
 
-2. Dentro de `apiKey.js`, implementa dos funciones esenciales:
+2. Dentro de `apikeyMarvel.js`, implementa dos funciones esenciales:
 
 ```js
-// src/lib/apiKey.js
+// src/lib/apikeyMarvel.js
 
 export const getApiKey = () => {
    // Implementa el código para obtener la API KEY desde Local Storage
@@ -56,7 +56,7 @@ esquema como punto de partida:
 ``` js
 // test/apiKey.spec.js
 
-import { getApiKey, setApiKey } from '../src/lib/apiKey.js';
+import { getApiKey, setApiKey } from '../src/lib/apikeyMarvel.js';
 
 describe('getApiKey', () => {
 
@@ -113,7 +113,7 @@ enrutador para gestionar ambas situaciones.
 ![Preview Detail](./assets/previewDetail.gif)
 
 > [!IMPORTANT]
-> Recuerda utilizar las funciones que creamos anteriormente en `apiKey.js`
+> Recuerda utilizar las funciones que creamos anteriormente en `apikeyMarvel.js`
 para manejar de manera segura la API KEY.
 
 ### Integración con Open AI
@@ -138,8 +138,8 @@ proporcionada por OpenAI.
 ```js
 // src/lib/openAIApi.js
 
-// Importa la función para obtener la API KEY desde apiKey.js
-import { getApiKey } from './apiKey.js';
+// Importa la función para obtener la API KEY desde apikeyMarvel.js
+import { getApiKey } from './apikeyMarvel.js';
 
 
 export const communicateWithOpenAI = (messages) => {

@@ -1,9 +1,9 @@
 // test/openAIApi.spec.js
 
 import { communicateWithOpenAI } from '../src/lib/openAIApi.js';
-import { getApiKey } from '../src/lib/apiKey.js';
+import { getApiKey } from '../src/lib/apiKeyMarvel.js';
 
-jest.mock('../src/lib/apiKey.js');
+jest.mock('../src/lib/apikeyMarvel.js');
 
 describe('communicateWithOpenAI', () => {
   beforeEach(() => {
