@@ -1,4 +1,4 @@
-import { getApiKey } from './lib/apiKeyMarvel.js';
+import { getApiKey } from './apiKeyMarvel.js';
 
 export const communicateWithOpenAI = async (messages) => {
   const APIKEY = getApiKey();
